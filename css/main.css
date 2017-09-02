@@ -38,7 +38,7 @@ video {
 	align-items: center;
 	position: fixed;
 	background-color: white;
-	z-index: 1;
+	z-index: 999;
 	color: #1F0500;
 	font-weight: 700;
 	border-bottom: 1px solid #ddd;
@@ -216,9 +216,10 @@ video {
 	width: 100%;
 	background-color: #F2F5F5;
 	padding-top: 60px;
-	height: 600px;
 	position: relative;
 	margin-bottom: 500px;
+	display: flex;
+	flex-direction: column;
 }
 
 #events-section:before {
@@ -243,6 +244,53 @@ video {
 	font-weight: 700;
 	font-size: 27px;
 	margin: 50px 10% 10px 10%;
+}
+
+.event-block {
+	margin: 50px 10% 10px 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.event-collage {
+	flex: 1;
+}
+
+.event-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	margin: 3%;
+	border-left: 4px solid white;
+	padding-left: 2%;
+}
+
+.event-info h2 {
+	color: #13368C;
+}
+
+.reverse-order {
+	flex-direction: row-reverse;
+}
+
+.img-wrapper {
+	flex: 1;
+	margin: 10px;
+}
+
+.img-row {
+	display: flex;
+	flex: 1
+
+}
+.img-row div {
+	flex: 1;
+}
+
+#events-section img {
+	width: 100%;
+	height: auto;
 }
 
 #membership-section {
@@ -368,7 +416,7 @@ video {
 
 @media (max-width: 800px) {
 	#splash-section {
-		height: 100vh;
+		height: 110vh;
 	}
 	#wrapper {
 		flex-direction: column;
@@ -390,6 +438,19 @@ video {
 		margin-top: 50px;
 		border-left: none;
 	}
-}
+	.event-block {
+		display: block;
+		margin: 0;
+	}
+	.event-collage {
+		display: block;
+		margin: 50px 10% 10px 10%;
+	}
+	.event-info {
+		display: block;
+		margin: 50px 10% 10px 10%;
+		text-align: center;
+		border: none;
+	}
 
 
