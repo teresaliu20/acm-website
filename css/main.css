@@ -64,7 +64,6 @@ a {
 .nav-tab {
 	background-color: white;
 	justify-self: flex-end;
-	transition: 0.4s;
 	margin-right: 1%;
 	height: 94%;
 	display: flex;
@@ -549,7 +548,7 @@ a {
 	}
 	.nav-tab {
 		padding: 10px;
-		display: block;
+		display: none;
 		text-align: center;
 		width: 100%;
 		border-top: 1px solid #ddd;
